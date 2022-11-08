@@ -64,6 +64,25 @@ header {
   align-items: center;
 }
 
+#logo {
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+#logo img:hover {
+  transform: scale(1.1);
+}
+
+#logo img {
+  transition: transform 0.3s;
+  animation-delay: .4s;
+}
+
+#logo img {
+  transition: transform 0.3s;
+  animation-delay: 0.4s;
+}
+
 #logo-copa {
   width: 200px;
   height: 200px;
@@ -166,12 +185,13 @@ header {
 }
 
 .card {
+  /* animação de aparecer devagar */
   opacity: 0;
   animation: appear 1s forwards;
   /*mantem opções de 100% do keyframe */
 }
 
-/* atrule */
+/* atrule - regras gerais de animação*/
 @keyframes appear {
   0% {
     /* inicia o site puxando de cima pra baixo */
@@ -187,23 +207,8 @@ header {
 }
 
 /* ----------------RESPOSIVIDADE---------------- */
-@media (max-width: 312px) {
-  #cards {
-    padding-left: 25px;
-    max-width: 240px;
-    flex-direction: column;
-  }
-}
 
-@media (max-width: 500px) {
-  #cards {
-    padding-left: 45px;
-    max-width: 440px;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 500px) {
+@media (max-width: 540px) {
   #cards {
     padding-left: 25px;
     max-width: 460px;
