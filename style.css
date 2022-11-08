@@ -203,14 +203,13 @@ header {
   }
 }
 
-/* 
 @media (min-width: 500px) {
   #cards {
     padding-left: 25px;
     max-width: 460px;
     flex-direction: column;
   }
-} */
+}
 
 @media (min-width: 700px) {
   #cards {
