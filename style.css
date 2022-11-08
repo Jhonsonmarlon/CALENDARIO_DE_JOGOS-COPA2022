@@ -52,9 +52,9 @@ body.blue {
 }
 
 header {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin-bottom: 63px;
 }
 
@@ -62,9 +62,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-#logo {
   opacity: 0;
   animation: appear 1s forwards;
 }
@@ -84,12 +82,12 @@ header {
 }
 
 #logo-copa {
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 170px;
 }
 
 #logo-cbf {
-  width: 300px;
+  width: 130px;
   height: 170px;
 }
 
