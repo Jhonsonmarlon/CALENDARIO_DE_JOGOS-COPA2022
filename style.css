@@ -52,9 +52,9 @@ body.blue {
 }
 
 header {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin-bottom: 63px;
 }
 
@@ -62,15 +62,32 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  opacity: 0;
+  animation: appear 1s forwards;
+}
+
+#logo img:hover {
+  transform: scale(1.1);
+}
+
+#logo img {
+  transition: transform 0.3s;
+  animation-delay: .4s;
+}
+
+#logo img {
+  transition: transform 0.3s;
+  animation-delay: 0.4s;
 }
 
 #logo-copa {
-  width: 200px;
-  height: 200px;
+  width: 135px;
+  height: 170px;
 }
 
 #logo-cbf {
-  width: 300px;
+  width: 130px;
   height: 170px;
 }
 
@@ -94,6 +111,10 @@ header {
   background: var(--color-bg-card);
   border-bottom: 2px solid var(--color-borderbottom-card);
   border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card h2 {
@@ -162,12 +183,13 @@ header {
 }
 
 .card {
+  /* animação de aparecer devagar */
   opacity: 0;
   animation: appear 1s forwards;
   /*mantem opções de 100% do keyframe */
 }
 
-/* atrule */
+/* atrule - regras gerais de animação*/
 @keyframes appear {
   0% {
     /* inicia o site puxando de cima pra baixo */
@@ -183,6 +205,14 @@ header {
 }
 
 /* ----------------RESPOSIVIDADE---------------- */
+
+@media (max-width: 540px) {
+  #cards {
+    padding-left: 25px;
+    max-width: 460px;
+    flex-direction: column;
+  }
+}
 
 @media (min-width: 700px) {
   #cards {
