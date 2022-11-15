@@ -1,4 +1,4 @@
-![image](./github/Capa.png)
+![image](./assets/github/Capa.png)
 
 # 🚀 CALENDÁRIO DA COPA DO MUNDO - CATAR 2022
 
