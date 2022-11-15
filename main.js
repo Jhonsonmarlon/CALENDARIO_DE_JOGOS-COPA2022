@@ -1,4 +1,4 @@
-//neste tópico é dada a crianção de um input interno do nome dos paises jogadores e o horario que será modificado no main geral
+//neste tópico é dada a criação de um input interno do nome dos paises jogadores e o horario que será modificado no main geral
 function newGame(player1, hour, player2) {
   return `
     <li>
