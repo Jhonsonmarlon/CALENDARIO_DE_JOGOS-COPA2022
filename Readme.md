@@ -15,7 +15,7 @@ Boa vistoria de projeto!
 
 # 🧠 O PROJETO
 
-![Protótipo](./github/desktop.png)
+![Protótipo](./assets/github/capa_ofc.jpg)
 
 O projeto foi implementar um calendário para demonstração das datas dos jogos da copa do mundo de 2022:
 
